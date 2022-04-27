@@ -1,0 +1,13 @@
+integration_name: com.newrelic.labs.jmx
+instances:
+  - name: jmx-metrics
+    command: metrics
+    arguments:
+      host: 127.0.0.1
+      port: 1414
+      login: true
+      username: nruser
+      password: 
+    labels: 
+      environment: production
+      role: load_balancer
